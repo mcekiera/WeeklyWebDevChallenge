@@ -1,0 +1,22 @@
+.main {
+	min-height: 200vh;
+	min-width: 100vw;
+}
+
+.main__background {
+	background-image: url(../img/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main__header {
+	text-align: center;
+}
+
+.main__logo {
+	opacity: .3;
+	display: inline-block;
+	margin: 0 auto;
+	-webkit-filter: drop-shadow(-2px -2px 0 #ccc);
+	filter: drop-shadow(-2px -2px 0 #ccc);
+}
