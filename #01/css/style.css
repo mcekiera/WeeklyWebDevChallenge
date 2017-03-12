@@ -310,6 +310,8 @@ select::-ms-expand {
 	display: none;
 }
 
+/**** MEDIA ****/
+
 @media screen and (max-width: 900px) {
 	.container__column {
 		margin: 0 1%;
@@ -319,7 +321,7 @@ select::-ms-expand {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 462px) {
 
 	.form__btn--sm {
 		display: block;
@@ -330,5 +332,9 @@ select::-ms-expand {
 	.form__btn--right {
 		float: none;
 		margin-top: 20px;
+	}
+
+	.logo--top {
+		max-width: 90%;
 	}
 }
