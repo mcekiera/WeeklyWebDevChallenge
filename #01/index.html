@@ -2,48 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <title>Weekly WebDev Challenge #01</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
 </head>
 <body class="main main__background">
 <div class="main__header">
-    <img class="main__logo" src="img/logo-lg.png" alt="site logo">
+    <!--<img class="logo&#45;&#45;top" src="img/logo-lg.png" alt="site logo">-->
 </div>
 <div class="main__container">
     <div class="container__column">
+
+        <!-- REGISTER FORM -->
+
         <div class="form__box">
             <h1 class="form__header">Register Form</h1>
             <div class="form__back">
                 <form class="form__body">
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--username"></span>
-                        <input class="form--blank" type="text" placeholder="Username">
+                        <input class="form--transparent" type="text" placeholder="Username">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--password"></span>
-                        <input class="form--blank" type="password" placeholder="Password">
+                        <input class="form--transparent" type="password" placeholder="Password">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--password"></span>
-                        <input class="form--blank" type="password" placeholder="Confirm password">
+                        <input class="form--transparent" type="password" placeholder="Confirm password">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--email"></span>
-                        <input class="form--blank" type="email" placeholder="Email">
+                        <input class="form--transparent" type="email" placeholder="Email">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--location"></span>
-                        <select class="form--blank"  autocomplete="off">
+                        <select class="form--transparent" autocomplete="off">
                             <option value="" disabled selected>Your location</option>
-                            <option value="select" >Selection...</option>
+                            <option value="select">Selection...</option>
                         </select><i class="fa fa-caret-down"></i>
                     </div>
                     <div class="form__checkbox">
                         <label>
-                            <span class="form__checkbox--outside" >
+                            <span class="form--basic form__checkbox--outside">
                                 <input type="checkbox">
                                 <span class="form__checkbox--inside"></span>
                             </span><span class="form__checkbox--label">I have read and accept the term of use.</span>
@@ -53,22 +56,26 @@
                 </form>
             </div>
         </div>
+
+        <!-- EMAIL SEND -->
+
         <div class="form__box">
             <h1 class="form__header">Send Email</h1>
             <div class="form__back">
                 <form class="form__body">
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--username"></span>
-                        <input class="form--blank" type="text" placeholder="Your Name">
+                        <input class="form--transparent" type="text" placeholder="Your Name">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--email"></span>
-                        <input class="form--blank" type="email" placeholder="Your Email">
+                        <input class="form--transparent" type="email" placeholder="Your Email">
                     </div>
-                    <textarea rows="10" cols="50" class="form__input form--area" placeholder="Type your message..."></textarea>
+                    <textarea rows="10" cols="50" class="form--basic form__input form--area"
+                              placeholder="Type your message..."></textarea>
                     <div class="form__checkbox">
                         <label>
-                                <span class="form__checkbox--outside" >
+                                <span class="form--basic form__checkbox--outside">
                                     <input type="checkbox">
                                     <span class="form__checkbox--inside"></span>
                                 </span>
@@ -79,76 +86,86 @@
                 </form>
             </div>
         </div>
-
     </div>
     <div class="container__column">
+
+        <!-- SIGN IN FORM -->
+
         <div class="form__box">
             <h1 class="form__header">Sign In Form</h1>
             <div class="form__back">
                 <form class="form__body">
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--username"></span>
-                        <input class="form--blank" type="text" placeholder="Username">
+                        <input class="form--transparent" type="text" placeholder="Username">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--password"></span>
-                        <input class="form--blank" type="password" placeholder="Password">
+                        <input class="form--transparent" type="password" placeholder="Password">
                     </div>
                     <div class="form__checkbox form--inline">
                         <label>
-                            <span class="form__checkbox--outside" >
+                            <span class="form--basic form__checkbox--outside">
                             <input type="checkbox">
                             <span class="form__checkbox--inside"></span>
                             </span>
                             <span class="form__checkbox--label">Remember me</span>
                         </label>
                     </div>
-                    <button class="form__btn form__btn--sm form__btn--submit form__btn--right" type="submit">Sign-in</button>
+                    <button class="form__btn form__btn--sm form__btn--submit form__btn--right" type="submit">Sign-in
+                    </button>
                 </form>
             </div>
         </div>
+
+        <!-- RECOVERY FORM -->
+
         <div class="form__box">
             <h1 class="form__header">Recover Form</h1>
             <div class="form__back">
                 <form class="form__body">
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--email"></span>
-                        <input class="form--blank" type="email" placeholder="Enter Your Email">
+                        <input class="form--transparent" type="email" placeholder="Enter Your Email">
                     </div>
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--mobile"></span>
-                        <input class="form--blank" type="text" placeholder="Enter Your Phone number">
+                        <input class="form--transparent" type="text" placeholder="Enter Your Phone number">
                     </div>
                     <button class="form__btn form__btn--sm form__btn--submit" type="submit">Send</button>
-                    <button class="form__btn form__btn--sm form__btn--submit form__btn--right" type="submit">Done</button>
+                    <button class="form__btn form__btn--sm form__btn--submit form__btn--right" type="submit" disabled>Done
+                    </button>
                 </form>
             </div>
         </div>
+
+        <!-- SUBSCRIBE FORM -->
+
         <div class="form__box">
             <h1 class="form__header">Subscribe Form</h1>
             <div class="form__back">
                 <form class="form__body">
-                    <div class="form__input">
+                    <div class="form--basic form__input">
                         <span class="form__ico form__ico--email"></span>
-                        <input class="form--blank" type="email" placeholder="Enter Your Email">
+                        <input class="form--transparent" type="email" placeholder="Enter Your Email">
                     </div>
                     <button class="form__btn form__btn--sm form__btn--submit" type="submit">Subscribe</button>
-                    <button class="form__btn form__btn--sm form__btn--cancel form__btn--right" type="submit">No, Thanks</button>
+                    <button class="form__btn form__btn--sm form__btn--cancel form__btn--right" type="submit">No,
+                        Thanks
+                    </button>
                 </form>
             </div>
         </div>
-        <div class="bottom--logo">
+        <div class="logo--bottom">
             <div>
                 <img src="img/logo-sm.png" alt="site logo">
                 <img src="img/masteralb-sm.png" alt="site logo">
             </div>
-            <div class="logo__url">
+            <div class="logo--bottom__url">
                 <img src="img/masteralb-ulr.png" alt="site logo">
             </div>
         </div>
-
     </div>
 </div>
-
 </body>
 </html>
