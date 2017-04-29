@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cahee</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,900" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar navbar-fixed-top container-fluid">
+    <header class="navbar navbar-fixed-top container-fluid header--extended">
         <nav class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar bar--left"></span>
+                    <span class="icon-bar bar--hidden"></span>
+                    <span class="icon-bar bar--right"></span>
                 </button>
-                <a class="navbar-brand logo logo-lg" href="#">cahee</a>
+                <a class="navbar-brand logo logo--lg" href="#">cahee</a>
             </div>
             <div class="collapse navbar-collapse" id="nav-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a class="upcase " href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="nav navbar-nav navbar-right menu">
+                    <li class="active"><a class="upcase menu__link" href="#">Home</a></li>
+                    <li><a class="menu__link" href="#">About</a></li>
+                    <li><a class="menu__link" href="#">Services</a></li>
+                    <li><a class="menu__link" href="#">Gallery</a></li>
+                    <li><a class="menu__link" href="#">Blog</a></li>
+                    <li><a class="menu__link" href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section class="container-fluid hero">
+    <section class="container-fluid hero" title="hero">
         <div class="container hero__body" style="background-image: url(img/bg-top.png)">
-            <div class="row full-hight">
-                <div class="col-md-4 col-sm-6 full-hight">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
                     <div class="hero__content">
                         <h1 class="hero__title">Fresh life</h1>
                         <p class="hero__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamaco.</p>
@@ -52,6 +52,24 @@
         </div>
     </section>
     <section class="container-fluid about">
+        <div class="container">
+            <div class="row full-hight">
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="img/b02.png" alt="strawberries bowl pic">
+                </div>
+                <div class="col-sm-6 full-hight">
+                    <div class="sec__content sec__content--wh">
+                        <h1 class="sec__title">About us</h1>
+                        <p>Abore Chee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum. </p>
+                        <p>Nim id est laborum. Sed ut perspiciatatis unde omnis iste natus error
+                            sit voluptatem accosantium doloremque laudantium, totam rem qperiam, eaque ipsa quae ab
+                            illo inventore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
