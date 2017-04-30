@@ -84,6 +84,7 @@ body {
   background-color: transparent; }
 
 /**** SECTIONS ****/
+/* HERO */
 .hero {
   background-color: #F9F8FB;
   position: relative; }
@@ -144,15 +145,60 @@ body {
     margin: 5px auto;
     width: 2px; }
 
+/* REST */
+.sec__content {
+  font-size: 1.125em;
+  margin-top: 10vh; }
+
+.sec__title {
+  font-size: 6em;
+  text-transform: capitalize;
+  font-weight: 600; }
+
+.sec__content--white {
+  color: #fff; }
+
+.sec__content--black {
+  color: #000; }
+
+.sec__box {
+  position: relative; }
+
+/* ABOUT */
+.about {
+  background-color: #00B0B0; }
+  .about__img {
+    margin: 7.5vh 0; }
+
+.service {
+  background-color: #70C0FF; }
+  .service .sec__title {
+    position: absolute;
+    top: 40%; }
+  .service img {
+    margin: 0 auto; }
+
+/**** SEO HIDDEN TITLE ****/
+.hidden-title {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
 @media screen and (max-width: 360px) {
   .hero__content {
     margin-top: 17.5vh;
-    text-align: center; } }
+    text-align: center; }
+
+  .sec__title {
+    font-size: 3.5em; } }
 .scrolling {
   -webkit-animation: scrolling 0.9s ease-in-out 0.9s infinite;
   -moz-animation: scrolling 0.9s ease-in-out 0.9s infinite;
   animation: scrolling 0.9s ease-in-out 0.9s infinite; }
 
+@media screen and (max-width: 480px) {
+  .hero__body {
+    background-size: auto; } }
 /*360,480,768,940,1210*/
 
 /*# sourceMappingURL=style.css.map */
