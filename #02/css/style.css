@@ -243,6 +243,13 @@ body {
 .img-responsive {
   margin-bottom: 30px; }
 
+/* SUBSCRIBE */
+.subscribe__body {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px; }
+
 /**** SEO HIDDEN TITLE ****/
 .hidden-title {
   position: absolute;

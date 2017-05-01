@@ -329,6 +329,18 @@ body {
   margin-bottom: 30px;
 }
 
+/* SUBSCRIBE */
+
+.subscribe {
+
+  &__body {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 500px;
+  }
+}
+
 /**** SEO HIDDEN TITLE ****/
 
 .hidden-title {
