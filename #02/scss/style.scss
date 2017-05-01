@@ -157,7 +157,6 @@ body {
   }
 
   &__content {
-	margin-top: 35vh;
 	text-align: left;
   }
 
@@ -203,9 +202,14 @@ body {
 
 /* REST */
 
+
+.sec {
+  padding: 50px 0 50px 0;
+}
+
 .sec__content {
   font-size: 1.125em;
-  margin-top: 50px;
+  padding: 25px 0 25px 0;
 }
 
 .sec__title {
@@ -263,12 +267,6 @@ body {
 
 .about {
   background-color: #00B0B0;
-  padding-bottom: 50px;
-
-  &__img {
-	margin: 7.5vh 0;
-  }
-
 }
 
 /* SERVICES */
@@ -276,21 +274,16 @@ body {
 .services {
   background-color: #70C0FF;
   text-align: center;
-  padding-bottom: 50px;
 
   .sec__title {
 	position: absolute;
-	top: 40%;
-  }
+	top: 200px;
 
-  &__img {
-	margin: 50px auto;
   }
 
   &__list {
 	list-style: none;
 	padding: 0;
-	margin: 100px auto 0 auto;
 	max-width: 400px;
   }
 
@@ -334,16 +327,10 @@ body {
 .gallery {
   background-color: #FEE92E;
   text-align: center;
-  padding-bottom: 50px;
 
-
-  .sec__content {
-	margin-bottom: 50px;
+  .img-responsive {
+	margin-bottom: 30px;
   }
-}
-
-.img-responsive {
-  margin-bottom: 30px;
 }
 
 /* SUBSCRIBE */
@@ -354,9 +341,6 @@ body {
   background: no-repeat center;
   min-height: 500px;
 
-  .sec__content {
-	margin-top: 140px;
-  }
   .sec__title {
 	font-size: 3em;
   }
@@ -416,15 +400,11 @@ body {
 	&__title {
 	  position: absolute;
 	  bottom: 40px;
-	  left: 40px;
+	  padding: 0 15px 0 25px;
 	  color: inherit;
 	  font-size: 18px;
 	  font-weight: 600;
 	}
-  }
-
-  .sec__content {
-	margin-bottom: 20px;
   }
 }
 
@@ -473,23 +453,23 @@ body {
   background-color: #000;
   text-align: center;
 
-  &__company {
-	float: left;
-  }
-
-  &__author {
-	float: right;
-  }
-
-  &__love {
-	color: #FF2B57;
-  }
-  
-  p {
+  &__el {
 	display: inline-block;
 	line-height: 90px;
 	margin: 0;
 	color: #fff;
+
+	&--left {
+	  float: left;
+	}
+
+	&--right {
+	  float: right;
+	}
+
+	&--love {
+	  color: #FF2B57;
+	}
   }
 }
 
@@ -522,7 +502,7 @@ body {
   }
 
   .services__list {
-	margin: 100px -10px 0 -30px;
+	margin: 50px 0 0 -20px;
   }
 
   .img-responsive {
@@ -537,16 +517,23 @@ body {
 	background-size: auto;
   }
 
-  .services__list {
-	margin: 100px 0 0 -20px;
-  }
-
   .col-xxs-12 {
 	width: 100%;
   }
 
   .subscribe {
 	text-align: center;
+  }
+
+  .footer__el {
+	display: block;
+	line-height: 30px;
+	margin: 10px 0;
+
+	&--left, &--right {
+	  float: none;
+	}
+
   }
 
 }
