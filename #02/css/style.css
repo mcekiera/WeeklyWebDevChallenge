@@ -25,10 +25,13 @@ body {
 .logo {
   font-family: 'Pacifico', fantasy;
   text-transform: capitalize;
-  text-decoration: none;
-  color: #000; }
+  text-decoration: none; }
   .logo--lg {
-    font-size: 3.5em; }
+    font-size: 3.5em;
+    color: #000; }
+  .logo--sm {
+    font-size: 1.5em;
+    color: #B9B9B9; }
 
 /**** HEADER ****/
 .header--extended {
@@ -314,6 +317,48 @@ body {
       font-weight: 600; }
   .blog .sec__content {
     margin-bottom: 20px; }
+
+/* CONTACT */
+.contact {
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .contact form, .contact input, .contact textarea {
+    background-color: #00C4C3;
+    opacity: .7;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    line-height: 50px;
+    font-weight: 700; }
+    .contact form:focus, .contact input:focus, .contact textarea:focus {
+      opacity: 1;
+      border-left: 5px solid #355B82;
+      color: #fff; }
+
+.address {
+  text-align: left;
+  font-size: 16px; }
+  .address__cat {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .address p {
+    margin: 3px; }
+
+.footer {
+  background-color: #000;
+  text-align: center; }
+  .footer__company {
+    float: left; }
+  .footer__author {
+    float: right; }
+  .footer__love {
+    color: #FF2B57; }
+  .footer p {
+    display: inline-block;
+    line-height: 90px;
+    margin: 0;
+    color: #fff; }
 
 /**** SEO HIDDEN TITLE ****/
 .hidden-title {
