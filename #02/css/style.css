@@ -186,6 +186,10 @@ body {
   display: block;
   margin: 0 auto; }
 
+.sec__button--blog {
+  background-color: #F82B3C;
+  margin: 30px auto; }
+
 /* ABOUT */
 .about {
   background-color: #00B0B0;
@@ -252,8 +256,7 @@ body {
 /* SUBSCRIBE */
 .subscribe {
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: no-repeat center;
   min-height: 500px; }
   .subscribe .sec__content {
     margin-top: 140px; }
@@ -265,6 +268,52 @@ body {
   width: 100%;
   border: 1px solid black;
   line-height: 2.1em; }
+
+/* BLOG */
+.blog {
+  background-color: #B07CF8;
+  text-align: center; }
+  .blog-entry {
+    height: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 15px; }
+    .blog-entry__date {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      width: 60px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      line-height: 20px;
+      color: inherit;
+      text-align: center; }
+      .blog-entry__date span {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px; }
+    .blog-entry__stamp {
+      position: absolute;
+      bottom: 15px;
+      left: 40px;
+      color: inherit; }
+    .blog-entry__title {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      color: inherit;
+      font-size: 18px;
+      font-weight: 600; }
+  .blog .sec__content {
+    margin-bottom: 20px; }
 
 /**** SEO HIDDEN TITLE ****/
 .hidden-title {
