@@ -230,16 +230,23 @@ body {
   padding: 12px 20px;
   font-size: 1.5em;
   font-weight: 200;
-  margin-top: 15px;
   text-align: inherit;
 }
 
 .sec__button--hero {
   background-color: #FE6033;
+  margin-top: 15px;
 }
 
 .sec__button--gallery {
   background-color: #5685A3;
+  margin-top: 15px;
+}
+
+.sec__button--form {
+  background-color: #97BA2C;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ABOUT */
@@ -333,13 +340,26 @@ body {
 
 .subscribe {
 
-  &__body {
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	min-height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+
+  .sec__content {
+	margin-top: 140px;
+  }
+  .sec__title {
+	font-size: 3em;
   }
 }
+
+.sub-form__input {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid black;
+  line-height: 2.1em;
+}
+
 
 /**** SEO HIDDEN TITLE ****/
 
@@ -376,7 +396,6 @@ body {
 	margin-bottom: 5px;
   }
 
-
 }
 
 @media screen and (max-width: 480px) {
@@ -392,12 +411,27 @@ body {
   .col-xxs-12 {
 	width: 100%;
   }
+
+  .subscribe {
+	text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .subscribe {
+	background-size: cover;
+	background-position: -800px 200px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
   .services__list {
 	margin: 100px auto 0 auto;
   }
+
 }
 
 /*360,480,768,940,1210*/
