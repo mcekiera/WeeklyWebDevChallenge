@@ -156,7 +156,7 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 40%;
+	width: 25%;
   }
 
   &__title {
@@ -423,14 +423,14 @@ body {
   background-position: center;
   text-align: center;
 
-  form, input, textarea {
+  input, textarea {
 	background-color: #00C4C3;
 	opacity: .7;
 	color: #fff;
 	border: none;
 	margin-bottom: 10px;
-	line-height: 50px;
 	font-weight: 700;
+	padding: 16px 10px;
 
 	&:focus {
 	  opacity: 1;

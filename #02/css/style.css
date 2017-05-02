@@ -110,7 +110,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%; }
+    width: 25%; }
   .hero__title {
     font-weight: 900;
     font-size: 4em;
@@ -316,15 +316,15 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center; }
-  .contact form, .contact input, .contact textarea {
+  .contact input, .contact textarea {
     background-color: #00C4C3;
     opacity: .7;
     color: #fff;
     border: none;
     margin-bottom: 10px;
-    line-height: 50px;
-    font-weight: 700; }
-    .contact form:focus, .contact input:focus, .contact textarea:focus {
+    font-weight: 700;
+    padding: 16px 10px; }
+    .contact input:focus, .contact textarea:focus {
       opacity: 1;
       border-left: 5px solid #355B82;
       color: #fff; }
