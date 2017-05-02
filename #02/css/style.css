@@ -26,12 +26,14 @@ body {
 
 /**** HEADER ****/
 .header--extended {
-  margin-top: 20px; }
+  padding: 20px 0;
+  transition: all 1s; }
 .header--fixed {
   margin: 0;
-  padding: 2px 0;
+  padding: 5px 0;
   position: fixed;
-  background-color: #F9F8FB; }
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 1s; }
 
 .menu {
   margin-top: 10px; }

@@ -13,7 +13,7 @@
 
     <!-- HEADER -->
 
-    <header class="navbar navbar-fixed-top container-fluid header--extended">
+    <header id="js-header" class="navbar navbar-fixed-top container-fluid header--extended">
       <nav class="container">
         <h1 class="hidden-title">Menu</h1>
         <div class="navbar-header">
@@ -27,13 +27,13 @@
           <a class="navbar-brand logo logo--lg" href="#">Cahee</a>
         </div>
         <div class="collapse navbar-collapse" id="nav-collapse">
-          <ul class="nav navbar-nav navbar-right menu">
-            <li class="active"><a class="upcase menu__link" href="#">Home</a></li>
-            <li><a class="menu__link" href="#">About</a></li>
-            <li><a class="menu__link" href="#">Services</a></li>
-            <li><a class="menu__link" href="#">Gallery</a></li>
-            <li><a class="menu__link" href="#">Blog</a></li>
-            <li><a class="menu__link" href="#">Contact</a></li>
+          <ul id="js-menu" class="nav navbar-nav navbar-right menu">
+            <li class="active"><a class="upcase menu__link" href="#main-page">Home</a></li>
+            <li><a class="menu__link" href="#about-us">About</a></li>
+            <li><a class="menu__link" href="#our-services">Services</a></li>
+            <li><a class="menu__link" href="#gallery">Gallery</a></li>
+            <li><a class="menu__link" href="#blog">Blog</a></li>
+            <li><a class="menu__link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -41,7 +41,7 @@
 
     <!-- HERO -->
 
-    <section class="container-fluid hero hero__body" style="background-image: url(img/bg-top.png)" title="hero">
+    <section id="main-page" class="container-fluid hero hero__body" style="background-image: url(img/bg-top.png)" title="hero">
       <div class="container" >
         <!--<div class="row">-->
           <!--<div class="col-md-4 col-sm-6 full-hight">-->
@@ -49,7 +49,7 @@
               <h1 class="hero__title">Fresh life</h1>
               <p class="hero__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamaco.</p>
-              <button class="sec__button sec__button--hero">Get free now</button>
+              <button id="js-hero-button" class="sec__button sec__button--hero" data-target="#about-us">Get free now</button>
             </div>
           <!--</div>-->
         <!--</div>-->
@@ -63,7 +63,7 @@
 
     <!--ABOUT -->
 
-    <section class="container-fluid about sec">
+    <section id="about-us" class="container-fluid about sec">
       <div class="container">
         <div class="row">
           <div class="col-sm-5 col-md-6">
@@ -86,7 +86,7 @@
 
     <!-- SERVICES -->
 
-    <section class="container-fluid services sec">
+    <section id="our-services" class="container-fluid services sec">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-sm-push-6">
@@ -129,7 +129,7 @@
 
     <!-- GALLERY -->
 
-    <section class="container-fluid gallery sec">
+    <section id="gallery" class="container-fluid gallery sec">
       <div class="container">
         <div class="row">
           <div class="sec__content sec__content--black col-sm-8 col-sm-offset-2">
@@ -160,7 +160,7 @@
 
     <!-- SUBSCRIBE -->
 
-    <section class="container-fluid subscribe sec" style="background-image: url(img/b04.png)">
+    <section id="subscription" class="container-fluid subscribe sec" style="background-image: url(img/b04.png)">
       <div class="container">
         <div class="row">
           <div class="sec__content col-sm-8">
@@ -188,7 +188,7 @@
 
     <!-- BLOG -->
 
-    <section class="container-fluid blog sec">
+    <section id="blog" class="container-fluid blog sec">
       <div class="container">
         <div class="row">
           <div class="sec__content sec__content--white col-sm-6 col-sm-offset-3">
@@ -230,7 +230,7 @@
 
     <!-- CONTACT -->
 
-    <section class="container-fluid contact sec" style="background-image: url(img/bg-bottom.png)">
+    <section id="contact" class="container-fluid contact sec" style="background-image: url(img/bg-bottom.png)">
       <div class="container">
         <div class="row">
           <div class="sec__content col-sm-6 col-sm-offset-3">
@@ -267,7 +267,8 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="lib/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
