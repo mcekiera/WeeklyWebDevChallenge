@@ -1,10 +1,20 @@
 $(document).ready(function () {
 
+    /**
+     * Smoothly scroll page to element with given id.
+     * @param id
+     */
     function autoScroll(id) {
         var height = $(id).offset().top;
         $("html, body").animate({ scrollTop: "" + height }, 1000);
     };
 
+    /**
+     * Replace provided classes when given element is scrolled over, in any direction.
+     * @param element observed for scroll over situation
+     * @param stClass first class to replace
+     * @param ndClass second class to replace
+     */
     function changeClassOnScrollOver(element, stClass, ndClass) {
         var position = $(window).scrollTop();
 
@@ -17,6 +27,11 @@ $(document).ready(function () {
         }
     };
 
+    /**
+     * Execute AJAX GET request to given URL, and process retrieved data with passed function.
+     * @param url for request
+     * @param after function to execute after response
+     */
     function randomRequest(url, after) {
         $.ajax({
             url: url,
@@ -26,6 +41,11 @@ $(document).ready(function () {
         });
     }
 
+    /**
+     * Sends request and creates HTML markup for retrieved data, then appends it to #js-blog-container.
+     * Imitates real website content loading by AJAX requests.
+     * @param id fot jsonplaceholder API purposes
+     */
     function publishArticle(id) {
         var url ='https://jsonplaceholder.typicode.com/photos/' + id;
         var publish = function(data) {
@@ -37,6 +57,10 @@ $(document).ready(function () {
         randomRequest(url, publish);
     }
 
+    /**
+     * Execute given number of times publishArticle method.
+     * @param quantity of articles to add to HTML.
+     */
     function publishRandomArticles(quantity) {
         for(var i = 0; i < quantity; i += 1) {
             var random = parseInt(Math.random() * 4999);
@@ -44,12 +68,21 @@ $(document).ready(function () {
         }
     };
 
+    /**
+     * Generates random date in hardcoded range, mocking real data.
+     * @returns {Date}
+     */
     function randomDate() {
         var start = new Date("2017-04-01");
         var end = new Date();
         return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
     };
 
+    /**
+     * Creates DOM element with data retrieved with AJAX request.
+     * @param data from AJAX request.
+     * @returns {*|jQuery|HTMLElement}
+     */
     function createArticle(data) {
         var date = randomDate();
         var dateStr = date.toDateString();
@@ -65,6 +98,9 @@ $(document).ready(function () {
         return article;
     };
 
+    /**
+     * Mocking function, imitates image retrieving by AJAX request.
+     */
     function publishImages() {
         var container = $("<div class='row'></div>");
         var img = function() {
@@ -77,24 +113,38 @@ $(document).ready(function () {
         container.animate({opacity: "1"}, 1000);
     }
 
+    /**
+     * Auto scroll triggered in menu.
+     */
     $('.menu__link').click(function (e) {
         e.preventDefault();
         autoScroll($(this).attr('href'));
     });
 
+    /**
+     * Menu collapsing on scroll.
+     */
     $(window).scroll(function() {
         changeClassOnScrollOver($('#js-header'), 'header--extended', 'header--fixed');
     });
 
+    /**
+     * Auto scroll from hero button.
+     */
     $('#js-hero-button').click(function () {
         autoScroll($(this).data('target'));
     });
 
+    /**
+     * Read more action response
+     */
     $("#js-blog-button").click(function () {
-
         publishRandomArticles(3);
     });
 
+    /**
+     * View more action response
+     */
     $("#js-gallery-button").click(function () {
         publishImages();
     });
