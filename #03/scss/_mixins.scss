@@ -1,0 +1,16 @@
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  	      background-size: $size;
+}
+
+@mixin border-radius($len){
+  -webkit-border-radius: $len;
+     -moz-border-radius: $len;
+          border-radius: $len;
+}
+
+@mixin verticalAbsoluteAlign() {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}

@@ -1,6 +1,190 @@
 @import "mixins";
 
+$decorative: #7CC576;
+$text-dark: #777777;
+$text-light: #CCCCCC;
+
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  font-size: 16px;
+}
+
+.size {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.header {
+  background-color: #fff;
+  text-align: right;
+  padding: 30px 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+
+  .logo {
+	display: inline-block;
+	float: left;
+	margin: 4.5px 0;
+
+	&__text {
+	  text-transform: uppercase;
+	  font-weight: 600;
+	  font-size: 20px;
+	  line-height: 40px;
+	  text-decoration: none;
+	  color: #565656;
+	}
+
+	&__img {
+	  @include border-radius(50%);
+	  width: 28px;
+	  height: 28px;
+	  background-color: $decorative;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  display: inline-block;
+	  position: relative;
+	  top: 6px;
+	}
+  }
+}
+
+.menu {
+  display: inline-block;
+
+  &__item {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: .8em;
+	margin: auto 15px;
+
+	a {
+	  text-decoration: none;
+	  color: $text-dark;
+
+	  &:active, &:hover, &:focus, &:visited {
+		text-decoration: none;
+		color: $text-dark;
+	  }
+	}
+  }
+}
+
+.hero {
+  @include background-size(cover);
+  height: 100vh;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  text-align: center;
+  max-height: 1000px;
+
+  &::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .7);
+
+  }
+
+  &__content {
+	@include verticalAbsoluteAlign;
+	display: inline-block;
+	color: #ccc;
+	font-size: 20px;
+	z-index: 9;
+  }
+
+  &__title {
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #fff;
+  }
+
+}
+
+.treehouse__button {
+  padding: 20px;
+  background-color: $decorative;
+  border: none;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-shadow: 0 2px 2px #47AC46;
+  margin: 50px;
+  cursor: pointer;
+}
+
+.services {
+  text-align: center;
+  padding: 75px 0;
+
+  &__item {
+	width: 30%;
+	margin: 0 1.5%;
+	display: inline-block;
+	text-align: center;
+  }
+
+  &__list {
+	margin-top: 75px;
+  }
+
+}
+
+.sec {
+  &__title {
+	font-size: 30px;
+	text-transform: uppercase;
+  }
+  &__text {
+	font-size: 20px;
+  }
+
+  &--dark {
+
+	.sub-sec__title, .sec__title {
+	  color: #000;
+	}
+	.sub-sec__text, .sec__text {
+	  color: $text-dark;
+	}
+  }
+
+  &--light {
+	.sub-sec__title, .sec__title {
+	  color: #fff;
+	}
+	.sub-sec__text, .sec__text {
+	  color: $text-light;
+	}
+  }
+}
+
+.sub-sec {
+
+  &__title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+  }
+
+  &__text {
+	font-size: 16px;
+  }
+}
