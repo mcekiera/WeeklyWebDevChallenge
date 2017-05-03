@@ -44,14 +44,14 @@
     <section id="main-page" class="container-fluid hero hero__body" style="background-image: url(img/bg-top.png)" title="hero">
       <div class="container" >
         <!--<div class="row">-->
-          <!--<div class="col-md-4 col-sm-6 full-hight">-->
-            <div class="hero__content">
-              <h1 class="hero__title">Fresh life</h1>
-              <p class="hero__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamaco.</p>
-              <button id="js-hero-button" class="sec__button sec__button--hero" data-target="#about-us">Get free now</button>
-            </div>
-          <!--</div>-->
+        <!--<div class="col-md-4 col-sm-6 full-hight">-->
+        <div class="hero__content">
+          <h1 class="hero__title">Fresh life</h1>
+          <p class="hero__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamaco.</p>
+          <button id="js-hero-button" class="sec__button sec__button--hero" data-target="#about-us">Get free now</button>
+        </div>
+        <!--</div>-->
         <!--</div>-->
         <div class="mouse">
           <div class="mouse__body">
@@ -173,9 +173,9 @@
               </div>
               <form class="col-sm-12 sub-form">
                 <div class="row">
-                  <label class="hidden">You email address</label>
+                  <label for="input-subscribe"><span class="hidden">Your email address</span></label>
                   <span class="col-sm-9 col-xs-12">
-                    <input type="email" placeholder="Your email address" class="sub-form__input">
+                    <input id="input-subscribe" type="email" placeholder="Your email address" class="sub-form__input">
                   </span>
                   <span class="col-sm-3"><button type="submit" class="sec__button sec__button--form">Subscribe</button></span>
                 </div>
@@ -247,10 +247,20 @@
           </div>
           <div class="col-sm-pull-5 col-sm-6 col-md-5">
             <form class="form-horizontal">
-              <div class="input-holder"><input class="col-xs-12" type="text" placeholder="Your name..."></div>
-              <div class="input-holder"><input class="col-xs-12" type="email" placeholder="Your email..."></div>
-                <div class="input-holder"><input class="col-xs-12" type="text" placeholder="Your phone number..."></div>
-              <textarea class="col-xs-12" placeholder="Your message..." rows="8"></textarea>
+              <div class="input-holder">
+                <label for="input-name"><span class="hidden">Your name...</span></label>
+                <input id="input-name" class="col-xs-12" type="text" name="name" placeholder="Your name...">
+              </div>
+              <div class="input-holder">
+                <label for="input-email"><span class="hidden">Your email...</span></label>
+                <input id="input-email" class="col-xs-12" type="email" placeholder="Your email...">
+              </div>
+              <div class="input-holder">
+                <label for="input-phone"><span class="hidden">Your name...</span></label>
+                <input id="input-phone" class="col-xs-12" type="text" placeholder="Your phone number...">
+              </div>
+              <label for="input-message"><span class="hidden">Your message...</span></label>
+              <textarea id="input-message" class="col-xs-12" placeholder="Your message..." rows="8"></textarea>
             </form>
           </div>
         </div>
@@ -262,7 +272,7 @@
     <footer class="footer">
       <div class="container">
         <p class="footer__el footer__el--left">&copy; 2015 Company. All rights reserved</p>
-        <p class="footer__el logo logo--sm">Cahee</p>
+        <p class="footer__el"><a class="logo logo--sm" href="#main-page">Cahee</a></p>
         <p class="footer__el footer__el--right">Made with <span class="footer__el--love">love</span> by Auskteez</p>
       </div>
     </footer>
