@@ -35,7 +35,7 @@ body {
 /**** LOGO ****/
 
 .logo {
-  font-family: 'Pacifico', fantasy;
+  font-family: 'Pacifico-Original', 'Pacifico', fantasy;
   text-decoration: none;
   text-transform: capitalize;
 
@@ -107,7 +107,7 @@ body {
 
 .navbar-toggle {
   height: 30px;
-  margin-top: 0;
+  margin: 0 20px 0 0;
   position: relative;
   text-align: center;
   width: 55px;
@@ -570,7 +570,7 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .hero {
 	&__body {
@@ -609,10 +609,40 @@ body {
 	text-align: center;
   }
 
+  .nav > li > a {
+	display: inline-block;
+	line-height: 1em;
+  }
+  
+  .menu {
+	@include border-radius(5%);
+	text-align: center;
+	background-color: rgba(255,255,255,.9);
+	position: absolute;
+	margin: 0 auto;
+	left: 10px;
+	right: 10px;
+	padding: 10px;
 
+  }
+
+  .menu__link {
+	display: inline-block;
+	font-size: 3.25em;
+	border-top: 7px solid transparent;
+
+	&:hover, &:active, &:visited, &:focus {
+	  border-top: 7px solid #FE6032;
+	  color: inherit;
+	}
+
+	.active & {
+	  border-top: 7px solid #FE6032;
+	}
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
 
   .hero__body {
 	background-position: 60% 25%;
