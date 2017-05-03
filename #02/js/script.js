@@ -91,7 +91,7 @@ $(document).ready(function () {
     });
 
     $("#js-blog-button").click(function () {
-        console.log("blog-button");
+
         publishRandomArticles(3);
     });
 
