@@ -299,7 +299,8 @@ body {
       .blog-entry__date span {
         font-size: 30px;
         font-weight: 600;
-        line-height: 35px; }
+        line-height: 35px;
+        display: inherit; }
     .blog-entry__stamp {
       position: absolute;
       bottom: 15px;
@@ -311,7 +312,8 @@ body {
       padding: 0 15px 0 25px;
       color: inherit;
       font-size: 18px;
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: capitalize; }
 
 /* CONTACT */
 .contact {

@@ -399,6 +399,7 @@ body {
 		font-size: 30px;
 		font-weight: 600;
 		line-height: 35px;
+		display: inherit;
 	  }
 	}
 
@@ -416,6 +417,7 @@ body {
 	  color: inherit;
 	  font-size: 18px;
 	  font-weight: 600;
+	  text-transform: capitalize;
 	}
   }
 }

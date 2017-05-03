@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,700,900" rel="stylesheet">
   </head>
-  <body>
+  <body  data-spy="scroll" data-target=".navbar">
     <h1 class="hidden-title">Cahee - Fresh Life</h1>
 
     <!-- HEADER -->
@@ -130,7 +130,7 @@
     <!-- GALLERY -->
 
     <section id="gallery" class="container-fluid gallery sec">
-      <div class="container">
+      <div id="js-gallery" class="container">
         <div class="row">
           <div class="sec__content sec__content--black col-sm-8 col-sm-offset-2">
             <h1 class="sec__title">Gallery</h1>
@@ -155,7 +155,7 @@
           <img class="img-responsive col-xs-6 col-xxs-12" src="img/gallery-5.png" alt="yellow fruit">
         </div>
       </div>
-      <button class="sec__button sec__button--gallery">View more</button>
+      <button id="js-gallery-button" class="sec__button sec__button--gallery">View more</button>
     </section>
 
     <!-- SUBSCRIBE -->
@@ -197,7 +197,7 @@
               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
           </div>
           <div class="col-xs-12">
-            <div class="row">
+            <div id="js-blog-container" class="row">
               <div class="col-sm-4">
                 <div class="blog-entry" style="background-image: url(img/blog-1.png)">
                   <p class="blog-entry__date"><span>20</span> nov</p>
@@ -222,7 +222,7 @@
             </div>
           </div>
           <div class="col-xs-12">
-            <button class="sec__button sec__button--blog">View more</button>
+            <button id="js-blog-button" class="sec__button sec__button--blog">View more</button>
           </div>
         </div>
       </div>
