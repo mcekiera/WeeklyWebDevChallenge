@@ -382,7 +382,8 @@ body {
   min-height: 500px;
 
   .sec__content {
-	padding: 75px 0 25px 0;
+	padding-top: 75px;
+	padding-bottom: 25px;
   }
 
   .sec__title {
@@ -682,7 +683,7 @@ body {
   }
 
   .subscribe .sec__content {
-	padding: 0 0 25px 0;
+	padding-bottom: 25px;
   }
 }
 
@@ -710,7 +711,7 @@ body {
   }
 
   .subscribe .sec__content {
-	padding: 0 0 25px 0;
+	padding-bottom: 25px;
   }
 
 }

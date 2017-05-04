@@ -288,7 +288,8 @@ body {
   background: no-repeat center;
   min-height: 500px; }
   .subscribe .sec__content {
-    padding: 75px 0 25px 0; }
+    padding-top: 75px;
+    padding-bottom: 25px; }
   .subscribe .sec__title {
     font-size: 3em; }
 
@@ -501,7 +502,7 @@ body {
     max-width: 95%; }
 
   .subscribe .sec__content {
-    padding: 0 0 25px 0; } }
+    padding-bottom: 25px; } }
 @media screen and (max-width: 360px) {
   .hero__body {
     min-height: 480px;
@@ -520,6 +521,6 @@ body {
     margin-bottom: 5px; }
 
   .subscribe .sec__content {
-    padding: 0 0 25px 0; } }
+    padding-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
