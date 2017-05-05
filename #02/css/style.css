@@ -88,7 +88,7 @@ button {
 .header--fixed {
   background-color: rgba(255, 255, 255, 0.9);
   margin: 0;
-  padding: 5px 0;
+  padding: .5em 0;
   position: fixed;
   transition: all 1s; }
 
@@ -434,6 +434,9 @@ button {
   animation: scrolling 0.9s ease-in-out 0.9s infinite; }
 
 /**** RWD ****/
+@media screen and (max-width: 1200px) {
+  .about .sec__content {
+    margin-top: 0; } }
 @media screen and (max-width: 980px) {
   .hero__content {
     text-align: left; }
@@ -458,6 +461,9 @@ button {
 @media screen and (max-width: 767px) {
   .hero__body {
     min-height: 980px; }
+
+  .hero__content {
+    width: 50%; }
 
   .sec__title {
     font-size: 4em; }
