@@ -265,3 +265,53 @@ body {
 	padding: 0 1em;
   }
 }
+
+/**** CONTACT ****/
+
+.contact {
+	background-color: $decorative;
+	text-align: center;
+	
+	&__content {
+		padding: 50px 0;
+	}
+	
+	.treehouse__button {
+		@include border-radius(10px);
+		border: 3px solid #fff;
+		padding: 10px;
+		margin: 25px;
+	}
+}
+
+/**** FOOTER ****/
+
+.footer {
+	text-align: center;
+	position: relative;
+	
+	&__icon {
+	@include border-radius(50%);
+	width: 2em;
+	height: 2em;
+	background-color: gray;
+	color: #fff;
+	
+		&.fa {
+			line-height: 2em;
+		}
+	}
+	
+	&__copy {
+		position: absolute;
+		left: 0;
+		margin: 1em 0;
+		line-height: 2em;
+	}
+	
+	&__links {
+		display: inline-block;
+	}
+	
+	
+}

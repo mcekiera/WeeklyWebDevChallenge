@@ -188,4 +188,40 @@ body {
     bottom: .5em;
     padding: 0 1em; }
 
+/**** CONTACT ****/
+.contact {
+  background-color: #7cc576;
+  text-align: center; }
+  .contact__content {
+    padding: 50px 0; }
+  .contact .treehouse__button {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    padding: 10px;
+    margin: 25px; }
+
+/**** FOOTER ****/
+.footer {
+  text-align: center;
+  position: relative; }
+  .footer__icon {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    background-color: gray;
+    color: #fff; }
+    .footer__icon.fa {
+      line-height: 2em; }
+  .footer__copy {
+    position: absolute;
+    left: 0;
+    margin: 1em 0;
+    line-height: 2em; }
+  .footer__links {
+    display: inline-block; }
+
 /*# sourceMappingURL=style.css.map */
