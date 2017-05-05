@@ -284,6 +284,34 @@ body {
 	}
 }
 
+/**** LOGOS ****/
+
+.logos__item {
+	display: inline-block;
+	width: 24%;
+	padding: 2em;
+	
+	img {
+		margin: 0 auto;
+		display: block;
+		max-height: 2em;
+		width: auto;
+	}
+}
+
+/**** PRE-FOOTER ***/
+
+.pre-footer {
+	background-color: gray;
+	
+	&__col {
+		width: 32%;
+		display: inline-block;
+	}
+	
+	
+}
+
 /**** FOOTER ****/
 
 .footer {
@@ -312,6 +340,5 @@ body {
 	&__links {
 		display: inline-block;
 	}
-	
-	
+
 }

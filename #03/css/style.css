@@ -202,6 +202,24 @@ body {
     padding: 10px;
     margin: 25px; }
 
+/**** LOGOS ****/
+.logos__item {
+  display: inline-block;
+  width: 24%;
+  padding: 2em; }
+  .logos__item img {
+    margin: 0 auto;
+    display: block;
+    max-height: 2em;
+    width: auto; }
+
+/**** PRE-FOOTER ***/
+.pre-footer {
+  background-color: gray; }
+  .pre-footer__col {
+    width: 32%;
+    display: inline-block; }
+
 /**** FOOTER ****/
 .footer {
   text-align: center;
