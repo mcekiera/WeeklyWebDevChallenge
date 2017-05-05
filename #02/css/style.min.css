@@ -1,0 +1,111 @@
+@font-face{font-family:Pacifico-Original;src:url(../font/Pacifico.ttf)}
+@keyframes scrolling{from{margin-top:5px}
+to{margin-top:12px;background-color:transparent}}
+body{font-family:Raleway,sans-serif;font-size:14px;background-color:#fff}
+.logo{font-family:Pacifico-Original,Pacifico,fantasy;text-decoration:none;text-transform:capitalize}
+.logo:active,.logo:focus,.logo:hover,.logo:visited{text-decoration:none}
+.logo--lg{color:#000;font-size:3.5em}
+.logo--lg:active,.logo--lg:focus,.logo--lg:hover,.logo--lg:visited{color:#000}
+.logo--sm{color:#B9B9B9;font-size:1.5em}
+.logo--sm:active,.logo--sm:focus,.logo--sm:hover,.logo--sm:visited{color:#B9B9B9}
+.header--extended{padding:20px 0;transition:all 1s}
+.header--fixed{background-color:rgba(255,255,255,.9);margin:0;padding:5px 0;position:fixed;transition:all 1s}
+.menu{margin-top:10px}
+.menu__link{border-top:3px solid transparent;color:#000;font-size:15px;font-weight:600;margin:0 10px;text-decoration:none}
+.menu__link:active,.menu__link:focus,.menu__link:hover,.menu__link:visited{border-top:3px solid #FE6032;color:inherit}
+.active .menu__link{border-top:3px solid #FE6032}
+.navbar-toggle{height:30px;margin:0 20px 0 0;position:relative;text-align:center;width:55px}
+.navbar-toggle .icon-bar{background-color:#000;border-radius:3px;display:block;height:5px;margin:0;right:0;transition:all .3s;width:55px}
+.navbar-toggle .icon-bar.bar--left{margin-top:14px;transform:rotate(45deg)}
+.navbar-toggle .icon-bar.bar--right{margin-top:-3px;transform:rotate(-45deg)}
+.navbar-toggle .icon-bar.bar--hidden{margin-top:-7px;transform:scaleY(0)}
+.navbar-toggle.collapsed .icon-bar{display:block;margin-top:4px;position:relative;transform:none}
+.navbar-nav>li>a{line-height:15px;padding:5px 0}
+.nav>li>a:active,.nav>li>a:focus,.nav>li>a:hover,.nav>li>a:visited{background-color:transparent}
+.full-hight{height:100%;min-height:600px;position:relative}
+.hero{background-color:#F9F8FB;position:relative}
+.hero__body{background-position:center;background-repeat:no-repeat;background-size:contain;height:100%;height:100vh;max-height:1000px;min-height:600px;position:relative}
+.hero__content{position:absolute;text-align:left;top:50%;transform:translateY(-50%);width:25%}
+.hero__title{font-size:4em;font-weight:900;text-align:inherit;text-transform:capitalize}
+.hero__text{font-size:1.125em;text-align:inherit}
+.mouse{bottom:10px;display:block;left:50%;position:absolute;text-align:center;transform:translate(-50%,0)}
+.mouse__body{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:.125em solid #000;color:#000;display:inline-block;height:35px;width:20px}
+.mouse__wheel{-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background-color:#000;height:5px;margin:5px auto;width:2px}
+.sec{padding:50px 0}
+.sec__content{font-size:1.125em}
+.sec__title{font-size:6em;font-weight:600;text-transform:capitalize}
+.sec__content--white{color:#fff}
+.sec__content--black{color:#000}
+.sec__box{position:relative}
+.sec__button{-webkit-box-shadow:-2px 2px 5px #666;-moz-box-shadow:-2px 2px 5px #666;box-shadow:-2px 2px 5px #666;border:none;color:#fff;font-size:1.5em;font-weight:200;padding:12px 20px;text-align:inherit;text-transform:uppercase}
+.sec__button--hero{background-color:#FE6033;margin-top:15px}
+.sec__button--gallery{background-color:#5685A3;margin-top:15px}
+.sec__button--form{background-color:#97BA2C;display:block;margin:0 auto}
+.sec__button--blog{background-color:#F82B3C;margin:30px auto}
+.about{background-color:#00B0B0}
+.about .sec__content{margin-top:100px}
+.services{background-color:#70C0FF;text-align:center}
+.services .sec__title{position:absolute;top:200px}
+.services__list{list-style:none;margin-top:50px;max-width:400px;padding:0}
+.services__item{-webkit-box-shadow:-2px 2px 5px #666;-moz-box-shadow:-2px 2px 5px #666;box-shadow:-2px 2px 5px #666;background-color:#fff;cursor:pointer;display:table;font-size:1.5em;height:100px;margin:10px 0;text-align:center;width:100%}
+.services__icon{border-left:1px solid #AFAFAF;display:inline-block;float:right;height:100px;padding:25px;text-align:center;vertical-align:middle;width:100px}
+.services__text{display:table-cell;font-weight:500;height:100%;text-align:center;vertical-align:middle;white-space:pre-wrap;width:calc(100% - 100px);word-wrap:break-word}
+.gallery{background-color:#FEE92E;text-align:center}
+.gallery .img-responsive{margin-bottom:30px}
+.subscribe{background:no-repeat center;min-height:500px}
+.subscribe .sec__content{padding-top:75px;padding-bottom:25px}
+.subscribe .sec__title{font-size:3em}
+.sub-form__input{border:1px solid #000;line-height:2.1em;padding:12px 20px;width:100%}
+.blog{background-color:#B07CF8;text-align:center}
+.blog-entry{background-repeat:no-repeat;background-size:cover;color:#fff;cursor:pointer;height:330px;margin-bottom:15px;text-align:left}
+.blog-entry__date{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background-color:rgba(0,0,0,.3);color:inherit;font-size:18px;font-weight:700;height:60px;left:40px;line-height:20px;position:absolute;text-align:center;text-transform:uppercase;top:30px;width:60px}
+.blog-entry__date span{display:inherit;font-size:30px;font-weight:600;line-height:35px}
+.blog-entry__stamp{bottom:15px;color:inherit;left:40px;position:absolute}
+.blog-entry__title{bottom:40px;color:inherit;font-size:18px;font-weight:600;padding:0 15px 0 25px;position:absolute;text-transform:capitalize}
+.contact{background-position:center;background-size:cover;text-align:center}
+.contact input,.contact textarea{background-color:#00C4C3;border:none;color:#fff;font-weight:700;margin-bottom:10px;opacity:.7;padding:16px 10px}
+.contact input:focus,.contact textarea:focus{border-left:5px solid #355B82;color:#fff;opacity:1}
+.address{font-size:16px;text-align:left}
+.address__cat{font-weight:700;text-transform:uppercase}
+.address p{margin:3px}
+.footer{background-color:#000;text-align:center}
+.footer__el{color:#fff;display:inline-block;line-height:90px;margin:0}
+.footer__el--left{float:left}
+.footer__el--right{float:right}
+.footer__el--love{color:#FF2B57}
+.hidden-title{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);position:absolute}
+.scrolling{-webkit-animation:scrolling .9s ease-in-out .9s infinite;-moz-animation:scrolling .9s ease-in-out .9s infinite;animation:scrolling .9s ease-in-out .9s infinite}
+@media screen and (max-width:980px){.hero__content{text-align:left}
+.hero__body{background-size:cover}
+.sec__title{font-size:5em}
+.about .sec__content{margin-top:0}
+.services__list{margin:0 auto}
+.services .sec__title{top:100px}
+.img-responsive{margin:0 auto}}
+@media screen and (max-width:767px){.hero__body{min-height:980px}
+.sec__title{font-size:4em}
+.subscribe .sec__title{font-size:2em}
+.subscribe{background-size:cover;background-position:-800px 200px}
+.sec__content{margin-left:5px;margin-right:5px}
+.about .sec__content{margin-top:0}
+.sub-form__input{width:90%}
+.subscribe{text-align:center}
+.nav>li>a{display:inline-block;line-height:1em}
+.menu{-webkit-border-radius:5%;-moz-border-radius:5%;border-radius:5%;text-align:center;background-color:rgba(255,255,255,.9);position:absolute;margin:0 auto;left:10px;right:10px;padding:10px}
+.menu__link{display:inline-block;font-size:3.25em;border-top:7px solid transparent}
+.menu__link:active,.menu__link:focus,.menu__link:hover,.menu__link:visited{border-top:7px solid #FE6032;color:inherit}
+.active .menu__link{border-top:7px solid #FE6032}}
+@media screen and (max-width:479px){.hero__body{background-position:60% 25%;background-size:inherit;min-height:768px}
+.hero__content{margin-left:-30px;text-align:center;width:100%}
+.col-xxs-12{width:100%}
+.footer__el{display:block;line-height:30px;margin:10px 0}
+.footer__el--left,.footer__el--right{float:none}
+.services .sec__title{top:150px}
+.services__list{max-width:95%}
+.subscribe .sec__content{padding-bottom:25px}}
+@media screen and (max-width:360px){.hero__body{min-height:480px;position:relative}
+.hero__content{text-align:center}
+.sec__title{font-size:3.5em}
+.services .sec__title{top:100px}
+.gallery .img-responsive{margin-bottom:5px}
+.subscribe .sec__content{padding-bottom:25px}}

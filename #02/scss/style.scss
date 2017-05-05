@@ -30,6 +30,43 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
+  background-color: #fff;
+}
+
+input, 
+textarea, 
+button {
+	position: relative;
+	
+	&:hover,
+	&:focus,
+	&:visited,
+	&:active {
+		outline-color: transparent;
+	}
+	
+}
+
+button {
+	position: relative;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+	}
+	
+	&:hover {
+		
+		&::before {
+			background-image: linear-gradient(transparent, rgba(0,0,0,.2))
+		}
+	}
+	
 }
 
 /**** LOGO ****/
@@ -39,7 +76,10 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 
-  &:hover, &:active, &:visited, &:focus {
+  &:hover, 
+  &:active, 
+  &:visited, 
+  &:focus {
 	text-decoration: none;
   }
 
@@ -56,7 +96,10 @@ body {
 	color: #B9B9B9;
 	font-size: 1.5em;
 
-	&:hover, &:active, &:visited, &:focus {
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
 	  color: #B9B9B9;
 	}
   }
@@ -91,7 +134,10 @@ body {
 	margin: 0 10px;
 	text-decoration: none;
 
-	&:hover, &:active, &:visited, &:focus {
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
 	  border-top: 3px solid #FE6032;
 	  color: inherit;
 	}
@@ -111,6 +157,10 @@ body {
   position: relative;
   text-align: center;
   width: 55px;
+    
+  &::before {
+	  display: none;
+  }
 
   .icon-bar {
 	background-color: #000;
@@ -465,6 +515,7 @@ body {
   input, textarea {
 	background-color: #00C4C3;
 	border: none;
+	border-left: 5px solid transparent;
 	color: #fff;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -600,6 +651,7 @@ body {
 
   .about .sec__content {
 	margin-top: 0;
+	text-align: center;
   }
 
   .sub-form__input {
