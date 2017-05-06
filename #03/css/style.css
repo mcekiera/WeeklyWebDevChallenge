@@ -250,7 +250,34 @@ body {
 
 /**** CULTURE *****/
 .culture {
-  background-color: #ccc; }
+  background-color: #F9F9F9;
+  text-align: center;
+  padding: 50px 0; }
+  .culture__column {
+    width: 31%;
+    display: inline-block;
+    padding: 2em .5em; }
+  .culture__img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid #777;
+    padding: 1em;
+    text-align: center; }
+  .culture__img--right img {
+    margin-right: .5em; }
+  .culture__line {
+    width: 15%;
+    height: 0;
+    display: inline-block;
+    border-top: 3px solid #777;
+    position: absolute;
+    top: 175px; }
+    .culture__line--left {
+      left: 57.5%; }
+    .culture__line--right {
+      right: 57.5%; }
 
 /**** CONTACT ****/
 .contact {

@@ -351,7 +351,44 @@ body {
 /**** CULTURE *****/
 
 .culture {
-  background-color: #ccc;
+  background-color: #F9F9F9;
+  text-align: center;
+  padding: 50px 0;
+
+  &__column {
+	width: 31%;
+	display: inline-block;
+	padding: 2em .5em;
+
+  }
+
+  &__img {
+	@include border-radius(50%);
+	display: inline-block;
+	border: 3px solid #777;
+	padding: 1em;
+	text-align: center;
+  }
+
+  &__img--right img {
+	margin-right: .5em;
+  }
+
+  &__line {
+	width: 15%;
+	height: 0;
+	display: inline-block;
+	border-top: 3px solid #777;
+	position: absolute;
+	top: 175px;
+
+	&--left {
+		left: 57.5%
+	}
+	&--right {
+		right: 57.5%;
+	}
+  }
 }
 
 /**** CONTACT ****/
