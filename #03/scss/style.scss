@@ -1,6 +1,7 @@
 @import "mixins";
 
 $decorative: #7cc576;
+$background-sec: #F9F9F9;
 $text-dark: #777777;
 $text-light: #ccc;
 
@@ -351,7 +352,7 @@ body {
 /**** CULTURE *****/
 
 .culture {
-  background-color: #F9F9F9;
+  background-color: $background-sec;
   text-align: center;
   padding: 50px 0;
 
@@ -387,6 +388,88 @@ body {
 	}
 	&--right {
 		right: 57.5%;
+	}
+  }
+}
+
+/**** CLIENTS ****/
+
+.clients {
+  text-align: center;
+  position: relative;
+  padding: 3em 0;
+
+  &__img {
+	@include border-radius(50%);
+	background-color: $background-sec;
+	border: 10px solid $background-sec;
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	overflow: hidden;
+  }
+
+  &__reference {
+	background-color: $background-sec;
+	padding: 2em;
+	margin: 1.5em;
+	display: inline-block;
+	width: 60%;
+	font-size: 1.3em;
+	text-align: justify;
+	letter-spacing: .05em;
+	position: relative;
+	q {
+	  position: relative;
+	}
+	q:before {
+	  position: absolute;
+	  left: -10px;
+
+	}
+  }
+
+  &__client {
+	color: $decorative;
+	display: block;
+	text-align: center;
+	font-size: .8em;
+
+	&:before {
+	  content: '- ';
+	}
+  }
+
+  &__arrow {
+	position: absolute;
+	top: 45%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 20px 15px 0;
+	border-color: transparent $background-sec transparent transparent;
+  }
+
+  &--left {
+	.clients__img {
+	  float: left;
+	}
+	.clients__arrow {
+	  left: -20px;
+	  border-width: 15px 20px 15px 0;
+	  border-color: transparent $background-sec transparent transparent;
+	}
+  }
+
+  &--right {
+
+	.clients__img {
+	  float: right;
+	}
+	.clients__arrow {
+	  right: -20px;
+	  border-width: 15px 0 15px 20px;
+	  border-color: transparent transparent transparent $background-sec;
 	}
   }
 }
