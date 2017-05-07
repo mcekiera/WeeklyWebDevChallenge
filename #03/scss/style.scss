@@ -15,13 +15,12 @@ body {
   background-color: #fff;
   position: relative;
   z-index: -1;
-
 }
 
 /**** LAYOUT ****/
 
 .size {
-  max-width: 1170px;
+  max-width: 940px;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -121,7 +120,7 @@ body {
   }
 
   &__title {
-	font-size: 60px;
+	font-size: 3.625rem;
 	text-transform: uppercase;
 	color: #fff;
   }
@@ -136,7 +135,6 @@ body {
 
   &__item {
 	width: 30%;
-	margin: 0 1.5%;
 	display: inline-block;
 	text-align: center;
   }
@@ -149,60 +147,87 @@ body {
 
 /**** ALL SECTIONS ****/
 
-.sec {
-  &__title {
-	font-size: 30px;
-	text-transform: uppercase;
+.treehouse {
+
+  &--lg {
+	font-size: 1.25rem;
+
+	.treehouse__title {
+	  font-size: 2.375rem;
+	}
   }
-  &__text {
-	font-size: 20px;
+
+  &--sm {
+	font-size: .875rem;
+
+	.treehouse__title {
+	  font-size: 1.125rem;
+	}
+  }
+
+  &--xs {
+	font-size: .75rem;
+	letter-spacing: 0.1px;
+
+	.treehouse__title {
+	  font-size: 1rem;
+	}
   }
 
   &--dark {
+	color: $text-dark;
 
-	.sub-sec__title, .sec__title {
+	.treehouse__title,
+	.treehouse__subtitle {
 	  color: #000;
-	}
-	.sub-sec__text, .sec__text {
-	  color: $text-dark;
 	}
   }
 
   &--light {
-	.sub-sec__title, .sec__title {
+	color: $text-light;
+
+	.treehouse__title {
 	  color: #fff;
 	}
-	.sub-sec__text, .sec__text {
-	  color: $text-light;
-	}
   }
-}
-
-.sub-sec {
 
   &__title {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 20px;
   }
 
-  &__text {
-	font-size: 16px;
+  &__subtitle {
+	text-transform: capitalize;
+	font-weight: bold;
   }
-}
 
-.treehouse__button {
-  padding: 20px;
-  background-color: $decorative;
-  border: none;
-  border-radius: 35px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-shadow: 0 2px 2px #47AC46;
-  margin: 50px 0;
-  cursor: pointer;
+  &__columns {
+	div:nth-child(2) {
+	  margin: auto 5%;
+
+	}
+
+	.treehouse__col {
+	  width: 29%;
+	  max-width: 268px;
+	  display: inline-block;
+	  padding: 2em 0;
+	}
+  }
+
+  &__button {
+	padding: 20px;
+	background-color: $decorative;
+	border: none;
+	border-radius: 35px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+	text-shadow: 0 2px 2px #47AC46;
+	margin: 50px 0;
+	cursor: pointer;
+  }
 }
 
 /**** BLOG ****/
@@ -310,16 +335,6 @@ body {
 	}
   }
 
-  .sub-sec__title {
-	text-transform: capitalize;
-	margin: 0;
-	padding-top: .5em;
-  }
-
-  .sub-sec__text {
-	margin: 0;
-  }
-
   &__content {
 	text-align: left;
 	width: 50%;
@@ -357,9 +372,9 @@ body {
   padding: 50px 0;
 
   &__column {
-	width: 31%;
+	width: 30%;
 	display: inline-block;
-	padding: 2em .5em;
+	padding: 2em 0;
 
   }
 
@@ -381,13 +396,13 @@ body {
 	display: inline-block;
 	border-top: 3px solid #777;
 	position: absolute;
-	top: 175px;
+	top: 155px;
 
 	&--left {
-		left: 57.5%
+		left: 60%
 	}
 	&--right {
-		right: 57.5%;
+		right: 60%;
 	}
   }
 }
@@ -403,19 +418,18 @@ body {
 	@include border-radius(50%);
 	background-color: $background-sec;
 	border: 10px solid $background-sec;
-	width: 250px;
-	height: 250px;
+	width: 220px;
+	height: 220px;
 	display: inline-block;
 	overflow: hidden;
   }
 
   &__reference {
 	background-color: $background-sec;
-	padding: 2em;
-	margin: 1.5em;
+	padding: 2.5em;
+	margin: 1.5em .5em;
 	display: inline-block;
 	width: 60%;
-	font-size: 1.3em;
 	text-align: justify;
 	letter-spacing: .05em;
 	position: relative;
@@ -510,11 +524,18 @@ body {
 /**** PRE-FOOTER ***/
 
 .pre-footer {
-	background-color: gray;
-	
+	background-color: #222;
+
+
+  .size {
+	height: 30em;
+	vertical-align: top;
+  }
 	&__col {
-		width: 32%;
-		display: inline-block;
+	  width: 31%;
+	  display: inline-block;
+	  padding: 2em .5em;
+	  height: 300px;
 	}
 	
 	
@@ -530,7 +551,7 @@ body {
 	@include border-radius(50%);
 	width: 2em;
 	height: 2em;
-	background-color: gray;
+	background-color: #222;
 	color: #fff;
 	
 		&.fa {

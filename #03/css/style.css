@@ -10,7 +10,7 @@ body {
 
 /**** LAYOUT ****/
 .size {
-  max-width: 1170px;
+  max-width: 940px;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -93,7 +93,7 @@ body {
     font-size: 20px;
     z-index: 9; }
   .hero__title {
-    font-size: 60px;
+    font-size: 3.625rem;
     text-transform: uppercase;
     color: #fff; }
 
@@ -103,34 +103,47 @@ body {
   padding: 75px 0; }
   .services__item {
     width: 30%;
-    margin: 0 1.5%;
     display: inline-block;
     text-align: center; }
   .services__list {
     margin-top: 75px; }
 
 /**** ALL SECTIONS ****/
-.sec__title {
-  font-size: 30px;
-  text-transform: uppercase; }
-.sec__text {
-  font-size: 20px; }
-.sec--dark .sub-sec__title, .sec--dark .sec__title {
-  color: #000; }
-.sec--dark .sub-sec__text, .sec--dark .sec__text {
+.treehouse--lg {
+  font-size: 1.25rem; }
+  .treehouse--lg .treehouse__title {
+    font-size: 2.375rem; }
+.treehouse--sm {
+  font-size: .875rem; }
+  .treehouse--sm .treehouse__title {
+    font-size: 1.125rem; }
+.treehouse--xs {
+  font-size: .75rem;
+  letter-spacing: 0.1px; }
+  .treehouse--xs .treehouse__title {
+    font-size: 1rem; }
+.treehouse--dark {
   color: #777777; }
-.sec--light .sub-sec__title, .sec--light .sec__title {
-  color: #fff; }
-.sec--light .sub-sec__text, .sec--light .sec__text {
+  .treehouse--dark .treehouse__title,
+  .treehouse--dark .treehouse__subtitle {
+    color: #000; }
+.treehouse--light {
   color: #ccc; }
-
-.sub-sec__title {
+  .treehouse--light .treehouse__title {
+    color: #fff; }
+.treehouse__title {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px; }
-.sub-sec__text {
-  font-size: 16px; }
-
+  font-weight: bold; }
+.treehouse__subtitle {
+  text-transform: capitalize;
+  font-weight: bold; }
+.treehouse__columns div:nth-child(2) {
+  margin: auto 5%; }
+.treehouse__columns .treehouse__col {
+  width: 29%;
+  max-width: 268px;
+  display: inline-block;
+  padding: 2em 0; }
 .treehouse__button {
   padding: 20px;
   background-color: #7cc576;
@@ -224,12 +237,6 @@ body {
     .portfolio__img img {
       width: 100%;
       height: 100%; }
-  .portfolio .sub-sec__title {
-    text-transform: capitalize;
-    margin: 0;
-    padding-top: .5em; }
-  .portfolio .sub-sec__text {
-    margin: 0; }
   .portfolio__content {
     text-align: left;
     width: 50%; }
@@ -254,9 +261,9 @@ body {
   text-align: center;
   padding: 50px 0; }
   .culture__column {
-    width: 31%;
+    width: 30%;
     display: inline-block;
-    padding: 2em .5em; }
+    padding: 2em 0; }
   .culture__img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -273,11 +280,11 @@ body {
     display: inline-block;
     border-top: 3px solid #777;
     position: absolute;
-    top: 175px; }
+    top: 155px; }
     .culture__line--left {
-      left: 57.5%; }
+      left: 60%; }
     .culture__line--right {
-      right: 57.5%; }
+      right: 60%; }
 
 /**** CLIENTS ****/
 .clients {
@@ -290,17 +297,16 @@ body {
     border-radius: 50%;
     background-color: #F9F9F9;
     border: 10px solid #F9F9F9;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     display: inline-block;
     overflow: hidden; }
   .clients__reference {
     background-color: #F9F9F9;
-    padding: 2em;
-    margin: 1.5em;
+    padding: 2.5em;
+    margin: 1.5em .5em;
     display: inline-block;
     width: 60%;
-    font-size: 1.3em;
     text-align: justify;
     letter-spacing: .05em;
     position: relative; }
@@ -364,10 +370,15 @@ body {
 
 /**** PRE-FOOTER ***/
 .pre-footer {
-  background-color: gray; }
+  background-color: #222; }
+  .pre-footer .size {
+    height: 30em;
+    vertical-align: top; }
   .pre-footer__col {
-    width: 32%;
-    display: inline-block; }
+    width: 31%;
+    display: inline-block;
+    padding: 2em .5em;
+    height: 300px; }
 
 /**** FOOTER ****/
 .footer {
@@ -379,7 +390,7 @@ body {
     border-radius: 50%;
     width: 2em;
     height: 2em;
-    background-color: gray;
+    background-color: #222;
     color: #fff; }
     .footer__icon.fa {
       line-height: 2.2em; }
