@@ -5,9 +5,11 @@ $background-sec: #F9F9F9;
 $text-dark: #777777;
 $text-light: #ccc;
 
+$title: 'Montserrat';
+$text: 'Roboto Slab';
+
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -25,6 +27,10 @@ body {
   display: block;
   position: relative;
   height: 100%;
+}
+
+.page {
+  padding: 75px 0;
 }
 
 /**** HEADER ****/
@@ -46,6 +52,7 @@ body {
 	  text-transform: uppercase;
 	  font-weight: 600;
 	  font-size: 20px;
+	  font-family: $title, sans-serif;
 	  line-height: 40px;
 	  text-decoration: none;
 	  color: #565656;
@@ -69,6 +76,7 @@ body {
 
 .menu {
   display: inline-block;
+  font-family: $title, sans-serif;
 
   &__item {
 	display: inline-block;
@@ -93,6 +101,7 @@ body {
 .hero {
   @include background-size(cover);
   height: 100vh;
+  font-family: $text, serif;
   min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -117,11 +126,11 @@ body {
 	color: #ccc;
 	font-size: 20px;
 	z-index: 9;
+	width: 28em;
   }
 
   &__title {
 	font-size: 3.625rem;
-	text-transform: uppercase;
 	color: #fff;
   }
 
@@ -151,23 +160,31 @@ body {
 
   &--lg {
 	font-size: 1.25rem;
+	font-family: $text, serif;
+	line-height: 1.5rem;
 
 	.treehouse__title {
 	  font-size: 2.375rem;
+	  line-height: 3rem;
 	}
   }
 
   &--sm {
 	font-size: .875rem;
+	font-family: $text, serif;
+	line-height: 1.4rem;
 
-	.treehouse__title {
+	.treehouse__title,
+	.treehouse__subtitle {
 	  font-size: 1.125rem;
+
 	}
   }
 
   &--xs {
-	font-size: .75rem;
-	letter-spacing: 0.1px;
+	font-size: .8rem;
+	font-family: $text, serif;
+	line-height: 1.2rem;
 
 	.treehouse__title {
 	  font-size: 1rem;
@@ -194,16 +211,18 @@ body {
   &__title {
 	text-transform: uppercase;
 	font-weight: bold;
+	font-family: $title, sans-serif;
   }
 
   &__subtitle {
 	text-transform: capitalize;
 	font-weight: bold;
+	font-family: $title, sans-serif;
   }
 
   &__columns {
 	div:nth-child(2) {
-	  margin: auto 5%;
+	  margin: 0 5% 25px 0;
 
 	}
 
@@ -211,7 +230,7 @@ body {
 	  width: 29%;
 	  max-width: 268px;
 	  display: inline-block;
-	  padding: 2em 0;
+	  padding: 2em 0 0 0;
 	}
   }
 
@@ -225,8 +244,8 @@ body {
 	text-transform: uppercase;
 	font-size: 15px;
 	text-shadow: 0 2px 2px #47AC46;
-	margin: 50px 0;
 	cursor: pointer;
+	margin: 50px 0 25px 0;
   }
 }
 
@@ -234,7 +253,6 @@ body {
 
 .blog {
 
-  height: 500px;
   background-image: url('../img/blog-background.png');
   background-repeat: no-repeat;
   background-position: right center;
@@ -255,7 +273,8 @@ body {
   }
 
   &__content {
-	padding: 5% 5% 5% 35%;
+	padding-left: 35%;
+	padding-right: 5%;
 
   }
 
@@ -280,6 +299,7 @@ body {
 .blog-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   li {
 	margin: .2em 0;
@@ -287,14 +307,14 @@ body {
 
   span {
 	position: relative;
-	bottom: .5em;
+	bottom: .8em;
 	padding: 0 1em;
   }
 }
 
 /**** PORTFOLIO ****/
 .portfolio {
-  padding: 0.67em 0;
+
   text-align: center;
   position: relative;
 
@@ -315,6 +335,12 @@ body {
 	li {
 	  margin: 1em 0;
 	  height: 4em;
+
+	  p {
+		position: relative;
+		top: .5em;
+		margin: 0;
+	  }
 	}
   }
 
@@ -343,12 +369,11 @@ body {
   &__link {
 	color: $decorative;
 	text-transform: uppercase;
-	padding: 1em 0;
+	padding: 1em 0 1.5em 0;
 	text-decoration: none;
 	font-weight: bold;
 	position: relative;
 	display: block;
-	margin-bottom: 3em;
 
 	&:hover {
 	  text-decoration: none;
@@ -396,13 +421,13 @@ body {
 	display: inline-block;
 	border-top: 3px solid #777;
 	position: absolute;
-	top: 155px;
+	top: 185px;
 
 	&--left {
-		left: 60%
+	  left: 60%
 	}
 	&--right {
-		right: 60%;
+	  right: 60%;
 	}
   }
 }
@@ -429,17 +454,17 @@ body {
 	padding: 2.5em;
 	margin: 1.5em .5em;
 	display: inline-block;
-	width: 60%;
+	width: 70%;
 	text-align: justify;
 	letter-spacing: .05em;
 	position: relative;
+	line-height: 2rem;
 	q {
 	  position: relative;
 	}
 	q:before {
 	  position: absolute;
 	  left: -10px;
-
 	}
   }
 
@@ -491,83 +516,125 @@ body {
 /**** CONTACT ****/
 
 .contact {
-	background-color: $decorative;
-	text-align: center;
-	
-	&__content {
-		padding: 50px 0;
-	}
+  background-color: $decorative;
+  text-align: center;
 
-	.treehouse__button {
-		@include border-radius(10px);
-		border: 3px solid #fff;
-		padding: 10px;
-		margin: 25px;
-	}
+  .treehouse__button {
+	@include border-radius(10px);
+	border: 3px solid #fff;
+	padding: 10px;
+	margin: 25px;
+  }
 }
 
 /**** LOGOS ****/
 
 .logos__item {
-	display: inline-block;
-	width: 24%;
-	padding: 2em;
-	
-	img {
-		margin: 0 auto;
-		display: block;
-		max-height: 2em;
-		width: auto;
-	}
+
+  display: inline-block;
+  width: 24%;
+  padding: 3.75em;
+
+  img {
+	margin: 0 auto;
+	display: block;
+	max-height: 2em;
+	width: auto;
+  }
 }
 
 /**** PRE-FOOTER ***/
 
 .pre-footer {
-	background-color: #222;
+  background-color: #222;
+  font-size: 1.0625rem;
+  font-style: normal;
+
+  a {
+	text-decoration: none;
+	color: $text-light;
+  }
+
+  i {
+	font-size: 1.45rem;
+  }
 
 
   .size {
 	height: 30em;
 	vertical-align: top;
   }
-	&__col {
-	  width: 31%;
-	  display: inline-block;
-	  padding: 2em .5em;
-	  height: 300px;
+  &__col {
+	width: 31%;
+	display: inline-block;
+	padding: 2em .5em;
+	height: 300px;
+	vertical-align: top;
+
+	div {
+	  margin: .8em 0;
+
+
 	}
-	
-	
+	address {
+	  font-style: normal;
+	}
+  }
+
+  &__img {
+	position: relative;
+	display: inline-block;
+	width: 2.1rem;
+	vertical-align: top;
+	text-align: left;
+
+	i {
+	  top: -3px;
+	  position: relative;
+	}
+  }
+
+  &__line {
+	text-align: left;
+	display: inline-block;
+	margin: 0;
+
+	span {
+	  margin: 0 50px 0 0;
+
+	}
+  }
+
+
 }
 
 /**** FOOTER ****/
 
 .footer {
-	text-align: center;
-	position: relative;
-	
-	&__icon {
+  text-align: center;
+  position: relative;
+
+  &__icon {
 	@include border-radius(50%);
 	width: 2em;
 	height: 2em;
 	background-color: #222;
 	color: #fff;
-	
-		&.fa {
-			line-height: 2.2em;
-		}
+
+	&.fa {
+	  line-height: 2.2em;
 	}
-	
-	&__copy {
-		position: absolute;
-		left: 0;
-		margin: 1em 0;
-		line-height: 2em;
-	}
-	
-	&__links {
-		display: inline-block;
-	}
+  }
+
+  &__copy {
+	position: absolute;
+	left: 0;
+	margin: 1em 0;
+	line-height: 2em;
+  }
+
+  &__links {
+	display: inline-block;
+  }
 
 }
